@@ -30,7 +30,7 @@ jobs:
       - run: echo $CONFIGURATION > configuration.properties
       - name: Build and Test
         run: mvn verify --file pom.xml
-        
+
       - uses: actions/upload-artifact@v1
         with:
           name: test-results
