@@ -1,2 +1,6 @@
 target
 .idea
+test-results
+.DS_Store
+trace.zip
+configuration.properties
