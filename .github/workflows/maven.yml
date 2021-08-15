@@ -19,6 +19,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - run: mkdir test-results
-      - run: cp $CONFIGURATION configuration.properties
+      - run: echo $CONFIGURATION > configuration.properties
       - name: Build and Test
         run: mvn verify --file pom.xml
